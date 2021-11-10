@@ -1,0 +1,23 @@
+package Steps;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class VerintSearch {
+	@Given("browser is open")
+	public void browser_is_open() {
+		System.out.println("#1 - Browser is open");
+	}
+
+	@When("user enters 'Costumer Solution' on search box")
+	public void user_enters_on_search_bar(String string) {
+		System.out.println("#3 - User enters search word on search box");
+	}
+
+	@Then("user is navigated to search result")
+	public void user_is_navigated_to_search_result() {
+		System.out.println("#5 - Search result appears on page");
+	}
+}

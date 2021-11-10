@@ -1,0 +1,10 @@
+Feature: feature to test Verint search bar functionality
+
+Scenario: Validate verint search bar is working
+
+Given browser is open
+And user is on verint search page
+When user enters "costumer solution" on search bar
+And hits enter
+Then user is navigated to search result
+
